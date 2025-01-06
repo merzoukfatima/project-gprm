@@ -4141,7 +4141,6 @@ object fmConnexion: TfmConnexion
       Color = 8404992
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 512
       object imBackgroundImage: TImage
         Left = 0
         Top = 0
@@ -5782,7 +5781,7 @@ object fmConnexion: TfmConnexion
         BevelOuter = bvNone
         BorderStyle = bsNone
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clBlack
         Font.Height = -24
         Font.Name = 'Segoe UI'
         Font.Style = []
@@ -9841,7 +9840,7 @@ object fmConnexion: TfmConnexion
         BevelOuter = bvNone
         BorderStyle = bsNone
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clBlack
         Font.Height = -24
         Font.Name = 'Segoe UI'
         Font.Style = []

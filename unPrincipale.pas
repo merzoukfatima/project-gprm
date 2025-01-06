@@ -33,7 +33,7 @@ uses unDonnees, unFonction_Procedure, unConnexion;
 
 procedure TfmPrincipale.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-if Application.MessageBox('Etes-vous sûr de vouloir quitter GPRM ?','Message GAI', MB_ICONQUESTION + MB_YESNO) = IDYES
+if Application.MessageBox('Etes-vous sûr de vouloir quitter GPRM ?','Message GPRM', MB_ICONQUESTION + MB_YESNO) = IDYES
 then Application.Terminate
 else Application.Run;
 end;
@@ -46,7 +46,7 @@ begin
 try
    dmDonnees.coDB_GPRM.Connected := True;
 except
-      Application.MessageBox('Impossible de se connecter au serveur !','Message GAI', MB_ICONERROR);
+      Application.MessageBox('Impossible de se connecter au serveur !','Message GPRM', MB_ICONERROR);
       Application.Terminate;
       Exit;
 end;

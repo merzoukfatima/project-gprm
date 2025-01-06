@@ -114,14 +114,14 @@ var Cle, Crypte :String;
 begin
 if fmConnexion.edNom.Text = ''
 then begin
-          Application.MessageBox('Veuillez saisir Nom utilisateur !','Message GAI', MB_ICONEXCLAMATION);
+          Application.MessageBox('Veuillez saisir Nom utilisateur !','Message GPRM', MB_ICONEXCLAMATION);
           fmConnexion.edNom.SetFocus;
           Exit;
      end;
 
 if fmConnexion.edMots_Passe_Crypte.Text = ''
 then begin
-          Application.MessageBox('Veuillez saisir Mots de passe !','Message GAI', MB_ICONEXCLAMATION);
+          Application.MessageBox('Veuillez saisir Mots de passe !','Message GPRM', MB_ICONEXCLAMATION);
           fmConnexion.edMots_Passe_Crypte.SetFocus;
           Exit;
      end;
@@ -139,7 +139,7 @@ fmConnexion.qrTest_Utilisateur.Open;
 
 if fmConnexion.qrTest_Utilisateur.IsEmpty
 then begin
-          Application.MessageBox('Nom utilisateur incorrect !','Message GAI', MB_ICONERROR);
+          Application.MessageBox('Nom utilisateur incorrect !','Message GPRM', MB_ICONERROR);
           fmConnexion.edNom.SetFocus;
           Exit;
      end;
@@ -149,7 +149,7 @@ Crypte := THashSHA2.GetHashString(fmConnexion.edMots_Passe_Crypte.Text + Cle, TH
 
 if Crypte <> fmConnexion.qrTest_Utilisateur['Mots_Passe_Crypte']
 then begin
-          Application.MessageBox('Mots de passe incorrect !','Message GAI', MB_ICONERROR);
+          Application.MessageBox('Mots de passe incorrect !','Message GPRM', MB_ICONERROR);
           fmConnexion.edMots_Passe_Crypte.SetFocus;
           Exit;
      end;
